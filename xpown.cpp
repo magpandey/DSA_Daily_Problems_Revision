@@ -3,7 +3,7 @@ using namespace std;
 //This program is a leetcode famous problem about calculating x to the power of n but here n is high 
 //and we are supposed to be preventing the unneccessary time complexity
 //Its turn s out for this exact purpose there is this solution ousing binary to reduce the amout of calculation 
-//That would be originally required if we go with the standard approach''''''f 
+//That would be originally required if we go with the standard approach''''''
 double myPow(double x, int n){
     if(n == 0) return 1.0;
     if(x == 0) return 0.0;

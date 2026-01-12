@@ -17,4 +17,4 @@ int main(){
     int singleDigit = singleNumber(digits)
     count << "The single Number in the array was " <<singleDigit <<endl;
     return 0;
-}
+} 
