@@ -2,7 +2,6 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
 bool IsValid(int arr[],int mid,int n,int m){
     int sum = 0;
     int student = 1;
@@ -19,12 +18,8 @@ bool IsValid(int arr[],int mid,int n,int m){
         }else{
             return true;
         }
-    }
-    
+    } 
 }
-
-
-
 int allocateBooks(int arr[],int n,int m){
     int low = 0;
     int high = 0;
@@ -42,7 +37,6 @@ int allocateBooks(int arr[],int n,int m){
     }
     return ans;
 }
-
 int main(){
     vector<int>bookPages = {2,1,4,3,5};
     int n = bookPages.size();

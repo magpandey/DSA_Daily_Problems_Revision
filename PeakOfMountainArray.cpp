@@ -103,7 +103,6 @@ int PeakOfMountain(vector<int>&a){
 }
 int main(){
     vector<int>mountain = {3,4,5,8,9,6,2};
-
     int maxPeakIndex = PeakOfMountain(mountain);
     cout <<"The Index of the peak element is : " <<maxPeakIndex <<endl;
     return 0;

@@ -91,7 +91,7 @@ That break is caused by the single element.
 
 #include <iostream>
 #include <vector>
-
+using namespace std;
 int SingleInSorted(vector<int>&arr){
     int st = 0, end = arr.size() - 1;
     if(arr.size() == 1) return arr[0];
