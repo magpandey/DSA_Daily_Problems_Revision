@@ -60,6 +60,10 @@ int main(){
 }
 
 
+//Well the only problem i faced when trying to solve this problem was that i did get the initial logic i know 
+// i somehow would have to transgress the entire array but the making of largest second and largest as largest
+// seemed to work and the else if block was also little unclear later onn!!!
+
 
 
 
