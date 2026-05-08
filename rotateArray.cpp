@@ -54,7 +54,7 @@ public:
 class rotateArray
     {
         private:
-            void reverse(vector<int>& nums, int left, int right){
+            void reverse(vectdfor<int>& nums, int left, int right){
 
         while(left < right){
 
