@@ -130,7 +130,7 @@ int SingleInSorted(vector<int> &arr)
                 end = mid - 1;
             }
         }
-        0
+        
     }
     return -1;
 }

@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <map>
+#include <set>
 // I am going to create function for basic all the sorting algorithms
 
 // Insertion sort
+using namespace std;
 
 void InsertionSort(vector<int> arr, int n)
 {
