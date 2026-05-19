@@ -6,7 +6,7 @@
 #include <algorithm>
 
 using namespace std;
-
+ 
 void merge(vector<int>&nums, int left, int mid, int right){
     vector<int>temp;
 
@@ -41,7 +41,8 @@ void mergeSort(vector<int>&nums, int low , int high){
     int mid = low + (high - low)/2;    
     mergeSort(nums, low, mid);
     mergeSort(nums, mid + 1, high);
-    merge(nums, low,mid, high,);
+    merge(nums, low,mid, high
+    );
 }
 int main(){
     vector<int> arr = {5,6,7,2,1,8,7,3,9};

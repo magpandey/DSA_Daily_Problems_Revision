@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-bool IsValid(int arr[],int mid,int n,int m){
+bool IsValid(vector<int>arr,int mid,int n,int m){
     int sum = 0;
     int student = 1;
     for (int i = 0; i < n; i++)
@@ -20,9 +20,10 @@ bool IsValid(int arr[],int mid,int n,int m){
         }
     } 
 }
-int allocateBooks(int arr[],int n,int m){
+int allocateBooks(vector<int>arr,int n,int m){
     int low = 0;
     int high = 0;
+    int ans = 0;
     for(int i = 0; i < n; i ++){
         high = high + arr[i];
     }
