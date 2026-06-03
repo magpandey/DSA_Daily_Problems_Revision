@@ -3,64 +3,6 @@
 #include <vector>
 using namespace std;
 
-
-bool isFreqSame(vector<int>freq1,vector<int>freq2){
-    for(int i = 0; i < 26; i ++){
-        if(freq1[i] != freq2[i]){
-            return false;
-        }
-    }
-    return true;
-}
-bool isPermutationExists(string str1,string str2){
-    vector<int>freq1(26,0);
-
-    for(int i = 0; i < str2.length(); i ++){
-        freq1[str2[i] - 'a']++;
-    }
-    int windSize = str2.length();
-    
-    for(int i = 0; i < str1.length(); i ++){
-        int winIdx = 0, idx = i;
-        vector<int>windFreq(26,0);
-        while(winIdx < windSize && idx < str1.length()){
-            windFreq[str1[idx] - 'a']++;
-            winIdx++;
-            idx++;
-            
-            }
-            if(isFreqSame(freq1,windFreq)){
-                return true;
-        }
-    }
-    return false;
-}
-int main(){
-    string str1;
-    cout << "Enter the string where we are required to check the permutation : " <<endl;
-    getline(cin,str1);
-    string str2;
-    cout << "Enter the string we want whose permutation to exist: " << endl;
-    getline(cin,str2);
-
-    if(isPermutationExists(str1,str2)){
-        cout << "Yes Permutation do exist "<<endl;
-    }else{
-        cout << "No permutations do not exist " <<endl;
-    }
-    return 0;
-}
-
-
-
-//Now if we go through the optimization of real sliding window pattern this is hwo the cod will look
-
-
-#include <iostream>
-#include <string>
-#include <vector>
-using namespace std;
-
 // This takes O(26) time, which is constant O(1) time complexity!
 bool isFreqSame(const vector<int>& freq1, const vector<int>& freq2) {
     for (int i = 0; i < 26; i++) {

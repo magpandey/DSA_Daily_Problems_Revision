@@ -55,6 +55,30 @@ int main(){
 
 
 
+//Now a better approach should be here
+
+vector<vector<int>> matrixSetZero(vector<vector<int>>&a, int m, int n){
+    vector<int>row0(m,1);
+    vector<int>col0(n,1);
+
+    for(int i = 0; i < m; i ++){
+        for(int j = 0; j < n; j ++){
+            if(a[i][j] == 0){
+                row0[i] = 0;
+                col0[j] = 0;
+            }
+        }
+    }
+    for(int i = 0; i < m; i ++){
+        for(int j = 0; j < n; j ++){
+            if(row0[i] == 0 || col0[j] == 0){
+                a[i][j] = 0;
+            }
+        }
+    }
+    return a;
+}
+
 
 
 
